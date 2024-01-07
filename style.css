@@ -14,9 +14,9 @@ body{
     height: 100vh;
     margin: 0;
     font-family: 'Open Sans' , sans-serif;
-    background-image: url('https://images.pexels.com/photos/4407003/pexels-photo-4407003.jpeg?auto=compress&cs=tinysrgb&w=600');
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: black;
+    
+  
 }
 
 .card{
@@ -29,6 +29,7 @@ body{
     border-radius: 30px;
     text-align: center;
     padding: 40px 30px;
+    border:2px solid grey;
 }
 .search{
     width: 100%;
@@ -108,5 +109,23 @@ body{
     font-size: 15px;
     font-family: inherit;
     display: none;
+
+}
+@media only screen and (max-width: 600px) {
+    .card {
+        width: 90%; 
+    }
+    .search button{
+        margin-left: 0;
+    }
+
+    .search {
+        display: flex;
+        align-items: center;
+    }
+
+    .search input {
+        flex: 1;
+    }
 
 }
